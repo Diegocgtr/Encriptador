@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://bootswatch.com/5/solar/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Encriptador</title>
+</head>
+<body id="body">
+    
+
+    <nav class="navba ms-4 mt-4">
+        <img src="/img/Logo.png" alt="">
+    </nav>
+
+
+    <section class="ms-5 float-start" style="position: relative; display: inline;">
+        <div class="m-5">
+            <textarea id="input" class="form-control w-50 bg-transparent " style="font-size: 20px; color: white;" placeholder="Ingrese el texto aquí" name=""  id="" cols="100" rows="10"></textarea>    
+        </div>
+
+        <label class="ms-5" for=""><iconify-icon inline icon="bi:exclamation-circle-fill"></iconify-icon> Solo letras minúsculas</label>
+        <div class="ms-5">
+           <button onclick="encriptar()" class="btn btn-info"  type="button">Encriptar</button>
+           <button onclick="desencriptar()" class="btn btn-secondary m-2">Desencriptar</button>
+        </div>
+    </section>
+
+    <section class="me-5" style="position: absolute; right: 5px;"> 
+     <textarea id="exit" class="bg-transparent me-5"  name="" id="" cols="50" rows="23"></textarea> 
+     
+    </section>
+
+    
+
+   <div style=" position: absolute; top: 12em; right: 11em; "  id="munheco">
+     <img src="/img/munheco.png" style=" width: 250px; " alt="">
+     <div class="text-center text-white mt-3">    
+         <h4>Ningún mensaje fue <br> encontrado</h4>
+         <h6 class="text-muted">Ingresa el texto que desees <br> encriptar o Desencriptar</h6>
+       </div>
+ 
+    </div>
+
+
+<button class="btn btn-info " onclick="copy()" style="position: absolute; top: 550px; right: 265px;" >Copiar</button>
+
+
+
+   
+
+    <script src="/main.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
